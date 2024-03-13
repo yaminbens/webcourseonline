@@ -6,4 +6,3 @@ root: Welcome
 chapters:
 - file: Markdown
 - file: Code
-- file: notebooks
