@@ -4,5 +4,7 @@
 format: jb-book
 root: Welcome
 chapters:
+- file: MetaFiles
 - file: Markdown
+- file: Tips
 - file: Code
