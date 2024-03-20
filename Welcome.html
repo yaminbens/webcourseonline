@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Welcome';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown cells" href="Markdown.html" />
+    <link rel="next" title="Book Structure and Meta files" href="MetaFiles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,9 +178,12 @@
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Markdown.html">Markdown cells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MetaFiles.html">Book Structure and Meta files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Markdown.html">Headings, Equations and References</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="Code.html">Code Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tips.html">Notes, warnings, and other admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Code.html">Code blocks and outputs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Template.html">Template Page</a></li>
 </ul>
 
     </div>
@@ -376,7 +379,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#book-structure">Book Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notebooks">Additional Notebooks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><span class="xref myst"></span></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -393,26 +403,53 @@ document.write(`
 <p>This template is an explanatory guide for creating your own webcourse.<br>
 This course template is based on Barak Hirshberg’s Molecular Simulations course template,
 take a look: https://barakhirshberg.github.io/MolecularSimulations/intro.html</p>
-<p>You can open a new notebook buy clicking the plus sign on top of this page and rename the new notebook.</p>
-<p>The two main cell types you will use are Code cell and Markdown Cell. When opening a new cell you can select at the top of the page its function</p>
-<section id="book-structure">
-<h2>Book Structure<a class="headerlink" href="#book-structure" title="Link to this heading">#</a></h2>
-<p>Jupyter Book requires 3 additional .yml files: <br></p>
-<ul>
-<li><h3 class="rubric" id="config-yml">_config.yml <br></h3>
-</li>
+<p>In this tutorial you will learn how to open, edit, publish and share a course in the Jupyter Lab environment, in order to create a Jupyter book for your course.<br>
+On the left side of the screen you may find the contents of this Jupyter Book. Each page in this book is an <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file which will contain the course data. <br> The <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files you can see on the left side of this screen include additional information you may use to edit your Jupyter Book pages. <br>
+After editing your course notebooks, you can publish them.</p>
+<p>To enter edit mode, you need to double click the current cell. This will allow you to make changes to it, try it!
+Clicking the play button on the top edit bar will make the changes take effect. You can also use the short key <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> to apply changes.
+Adding new cells can be done by using the second from right symbol in this current cell when in edit mode.
+Alternatively you can click in the left margin of this sell, then press <code class="docutils literal notranslate"><span class="pre">B</span></code> for a following new cell or <code class="docutils literal notranslate"><span class="pre">A</span></code> for adding it before the current cell.</p>
+<p>The notebooks upports two cell forms. on the top of this page, on the editing bar you will find a <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> sign. Clicking it will open a selection menu with two important cell options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code> : suitable for text and math.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Code</span></code>: integrated code environment supporting python, with code execution and output display.
+You can learn more about these code cells in the additional notebooks.</p></li>
 </ul>
-<p>All of the configuration for your book. You can define metadata for your book, add a book logo and more.</p>
-<ul>
-<li><h3 class="rubric" id="toc-yml">_toc.yml <br></h3>
-</li>
+<p>A template python notebook already exists in this directory, under the name Template.ipynb. You may edit it and use it as your first course page.
+Additionally, you can open a new notebook by clicking the plus sign on top of this page, select the notebook python3 launcher and rename the new notebook by right clicking its tab.</p>
+<section id="additional-notebooks">
+<h2>Additional Notebooks<a class="headerlink" href="#additional-notebooks" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3><a class="reference internal" href="MetaFiles.html"><span class="std std-doc">Book Structure and Meta files</span></a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>contains all information aboud MetaData files required for The Jupyter Book.</p></li>
 </ul>
-<p>Your book’s structure is determined by a Table of Contents, a structure that Jupyter Book uses to create the order and nesting of pages.</p>
-<ul>
-<li><h3 class="rubric" id="environment-yml">environment.yml <br></h3>
-</li>
+</section>
+<section id="id2">
+<h3><a class="reference internal" href="Markdown.html"><span class="std std-doc">Headings, Equations and References</span></a><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>basic and general examples of edditing text and math in Books.</p></li>
 </ul>
-<p>These 3 files are already in this repository, You just need to edit them.</p>
+</section>
+<section id="id3">
+<h3><a class="reference internal" href="Tips.html"><span class="std std-doc">Notes, warnings, and other admonitions</span></a><a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>tutorial for special and nteractive cells, including notes, warnings, admonitions, and more.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3><a class="reference internal" href="Code.html"><span class="std std-doc">Code blocks and outputs</span></a><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>an example for python code integration in a Jupyter book.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3><a class="reference internal" href="Template.html"><span class="std std-doc">Template Page</span></a><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>When you feel ready, you can edit this page as part of your Jupyter Book.</p></li>
+</ul>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -449,11 +486,11 @@ take a look: https://barakhirshberg.github.io/MolecularSimulations/intro.html</p
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="Markdown.html"
+       href="MetaFiles.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown cells</p>
+        <p class="prev-next-title">Book Structure and Meta files</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -473,7 +510,14 @@ take a look: https://barakhirshberg.github.io/MolecularSimulations/intro.html</p
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#book-structure">Book Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notebooks">Additional Notebooks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><span class="xref myst"></span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><span class="xref myst"></span></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
