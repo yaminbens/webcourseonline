@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -405,7 +405,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="headings-equations-and-references">
 <h1>Headings, Equations and References<a class="headerlink" href="#headings-equations-and-references" title="Link to this heading">#</a></h1>
-<p>This is a Markdown cell, by double clicking it you can view its raw form and edit it. Using this type of cell you can add text blocks. The markdown cell supports several special meaning characters, hence to start a new line,the special <br> characters are used. the markdown cell also support several headings sizes:</p>
+<p>This is a Markdown cell, by double clicking it you can view it in raw form and edit it. Using this type of cell you can add text blocks. The markdown cell supports several special characters, hence to start a new line,the special <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code> character is used. the markdown cell also supports several headings sizes:</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="heading-1">
 <h1>Heading 1<a class="headerlink" href="#heading-1" title="Link to this heading">#</a></h1>
@@ -415,7 +415,7 @@ document.write(`
 <h3>Heading 3<a class="headerlink" href="#heading-3" title="Link to this heading">#</a></h3>
 <section id="heading-4">
 <h4>Heading 4<a class="headerlink" href="#heading-4" title="Link to this heading">#</a></h4>
-<p>The heading fonts are applied by adding a <code class="docutils literal notranslate"><span class="pre">#</span></code> at the beginning of the line:</p>
+<p>The heading fonts are applied by adding an increasing number of <code class="docutils literal notranslate"><span class="pre">#</span></code> at the beginning of the line:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Heading 1</span>
 <span class="c1">## Heading 2</span>
 <span class="c1">### Heading 3</span>
@@ -424,7 +424,7 @@ document.write(`
 </div>
 <p>Latex equations can also be included in the notebooks, as inline mathematical expressions <span class="math notranslate nohighlight">\(e^{i\pi} + 1 = 0\)</span>, using the <code class="docutils literal notranslate"><span class="pre">$</span></code> special symbol:</p>
 <p><code class="docutils literal notranslate"><span class="pre">$e^{i\pi}</span> <span class="pre">+</span> <span class="pre">1</span> <span class="pre">=</span> <span class="pre">0$</span></code></p>
-<p>Or as a new block. If you need to number equations so that you can refer to them later, use the math directive. the following format</p>
+<p>Or as a new block. If you need to number equations for references, use the math directive. the following format</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{math}
 :label: my_label
 w<span class="ge">_{t+1} = (1 + r_</span>{t+1}) s(w_t) + y_{t+1}
